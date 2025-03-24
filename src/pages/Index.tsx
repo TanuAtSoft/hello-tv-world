@@ -1,5 +1,5 @@
-
 import React, { useState } from 'react';
+import { toast } from 'sonner';
 import TvLayout from '@/components/TvLayout';
 import TvNavbar from '@/components/TvNavbar';
 import TvSection from '@/components/TvSection';
@@ -8,7 +8,6 @@ import TvGrid from '@/components/TvGrid';
 import TvCard from '@/components/TvCard';
 import { categories, featuredContent, popularContent, recentlyAdded } from '@/data/mock-data';
 import { NavGroup, NavigableItem, TizenNavigation, useTizenNavigation } from '@/components/TizenNavigation';
-import { toast } from '@/components/ui/sonner';
 
 const Index = () => {
   const [activeCategory, setActiveCategory] = useState('All');
